@@ -1,0 +1,7 @@
+branches:
+  - master
+
+plugins:
+  - ./semantic-release-plugins/debug
+  # - '@semantic-release/commit-analyzer'
+  # - '@semantic-release/release-notes-generator'

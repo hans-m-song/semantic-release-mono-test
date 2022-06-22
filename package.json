@@ -1,0 +1,20 @@
+{
+  "name": "semantic-release-mono-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:hans-m-song/semantic-release-mono-test.git",
+  "author": "Hans Song <hans.m.song@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "echo \"hello\""
+  },
+  "devDependencies": {
+    "semantic-release": "^19.0.3"
+  }
+}
