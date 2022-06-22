@@ -4,7 +4,8 @@ module.exports = {
   plugins: [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
-    "@semantic-release/npm",
     "@axalotl/semantic-release-plugin-debug",
+    "@semantic-release/npm",
+    "@semantic-release/github",
   ],
 };

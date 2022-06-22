@@ -1,7 +1,7 @@
 const debug =
-  (name) =>
-  (pluginConfig, { logger }) =>
-    logger.log(name, pluginConfig);
+  (step) =>
+  (config, { logger, ...context }) =>
+    logger.log({ step, config, context });
 
 module.exports.verifyConditions = debug("verifyConditions");
 module.exports.analyzeCommits = debug("analyzeCommits");

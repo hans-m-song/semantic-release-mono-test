@@ -18,5 +18,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "typescript": "^4.7.4"
   }
 }
