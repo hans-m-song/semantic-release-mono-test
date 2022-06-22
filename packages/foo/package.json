@@ -2,16 +2,22 @@
   "name": "@axalotl/foo",
   "version": "0.0.1",
   "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
   "license": "MIT",
   "scripts": {
     "release:dryrun": "semantic-release -d",
     "release": "semantic-release"
   },
   "devDependencies": {
+    "@axalotl/semantic-release-plugin-debug": "^0.0.1",
     "semantic-release": "^19.0.3",
     "semantic-release-monorepo": "^7.0.5"
   },
-  "dependencies": {
-    "@axalotl/semantic-release-plugin-debug": "^1.0.0"
+  "publishConfig": {
+    "access": "public"
   }
 }
