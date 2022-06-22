@@ -13,7 +13,6 @@
     "release": "semantic-release"
   },
   "devDependencies": {
-    "@axalotl/semantic-release-plugin-debug": "^0.0.1",
     "semantic-release": "^19.0.3",
     "semantic-release-monorepo": "^7.0.5"
   },
