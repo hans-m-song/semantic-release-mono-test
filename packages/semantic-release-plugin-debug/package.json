@@ -2,5 +2,16 @@
   "name": "@axalotl/semantic-release-plugin-debug",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "release:dryrun": "semantic-release -d",
+    "release": "semantic-release"
+  },
+  "devDependencies": {
+    "semantic-release": "^19.0.3",
+    "semantic-release-monorepo": "^7.0.5"
+  },
+  "dependencies": {
+    "@axalotl/semantic-release-plugin-debug": "^1.0.0"
+  }
 }
