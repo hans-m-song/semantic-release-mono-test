@@ -1,0 +1,16 @@
+name: Release ${{ inputs.package_path }}
+
+on:
+  workflow_call:
+    inputs:
+      package_path:
+        required: true
+        type: string
+
+jobs:
+  release:
+    runs-on:
+      - self-hosted
+    steps:
+      - run: npx semantic-release -d
+        working-directory: ${{ inputs.package_path }}

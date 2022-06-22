@@ -1,0 +1,22 @@
+name: Release Foo
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - packages/foo/**
+
+jobs:
+  release:
+    runs-on:
+      - self-hosted
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+      - run: npm install
+      # TODO compile action?
+      - uses: ./.github/workflows/release.yml
+        with:
+          package_path: packages/foo
+      # TODO publish action?
